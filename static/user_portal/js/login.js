@@ -130,7 +130,7 @@ $(document).ready(function ($) {
     password = $("#txtPassword").val();
     var numberString = username.toString();
     var firstThreeDigits = numberString.substring(0, 8);
-    if (firstThreeDigits !== "LAVAA9VV" && firstThreeDigits !== "LAVAA9LT" && firstThreeDigits !== "LAVANSEA" && firstThreeDigits !== "LAVANSAG" && firstThreeDigits !== "LAVAA9VR" && firstThreeDigits !== "LAVAA9AA" && firstThreeDigits !== "LAVAA9SB" ) {
+    if (firstThreeDigits !== "LAVAA9VV" && firstThreeDigits !== "LAVAA9LT" && firstThreeDigits !== "LAVANSEA" && firstThreeDigits !== "LAVANSAG" && firstThreeDigits !== "LAVAA9VR" && firstThreeDigits !== "LAVAA9AA" && firstThreeDigits !== "LAVAA9SB" && firstThreeDigits !== "LAVANSNC" ) {
       $("#divLoading").css("display", "none");
       $("#dialog-message").text("Invalid username or password");
 
